@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .actions a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .sign-in {
+    background: #8e4646;
+    color: #003366;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px; 
+    background-color: #c0dfe8;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.subheading {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.buttons {
+    margin: 30px 0;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.primary {
+    background-color: #007BFF;
+}
+
+.secondary {
+    background-color: #28A745;
+}
+
+.secondary span {
+    font-weight: bold;
+}
+
+.features-list {
+    list-style-type: none;
+    margin-top: 40px;
+    padding-left: 0;
+}
+
+.features-list li {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Accelerate Section */
+.accelerate-section {
+    padding: 50px 20px; 
+}
+
+.accelerate-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    background-image: url('./accelerate_img.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    width: 50%; 
+    text-align: right;
+    color: black;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Info Section */
+.info-section {
+    padding: 60px 20px; 
+    background-color: #fff;
+}
+
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    margin: 15px;
+}
+
+.column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Accelerate Section 1 */
+.accelerate-section1 {
+    padding: 50px 20px; 
+}
+
+.accelerate-card1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 350px;
+    background-image: url('./bg-how-does-office365-mailbox-work.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content1 {
+    width: 50%;
+    text-align: left;
+    color: black;
+}
+
+.card-content1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content1 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3c5c;
+    color: white;
+    padding: 40px 20px; 
+    text-align: center;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #ccc;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar .logo, .navbar .menu {
+        float: none;
+        text-align: center;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navbar .menu li {
+        margin: 5px 0; 
+    }
+
+    .info-columns {
+        flex-direction: column; 
+    }
+
+    .buttons {
+        flex-direction: column; 
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto; 
+    }
+
+    .accelerate-card, .accelerate-card1 {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .card-content, .card-content1 {
+        width: 100%; 
+        text-align: center; 
+}
+}
